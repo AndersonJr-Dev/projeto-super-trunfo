@@ -19,7 +19,7 @@ int main(){
     printf("\n=== Cadastre a primeira Carta ===\n");
 
     printf("Digite o nome do estado: ");
-    scanf(" %s[^\n]", &estado); // %[^\n] permite ler strings com espaços
+    scanf(" %s\n", &estado);
     limparBuffer(); // limpar o buffer após ler a entrada teclado
 
     printf("Digite o código da carta: ");
@@ -27,7 +27,7 @@ int main(){
     limparBuffer();
 
     printf("Digite o nome da cidade: ");
-    scanf(" %s[^\n]", &nome);
+    scanf(" %s\n", &nome);
     limparBuffer();
 
     printf("Digite a população: ");
@@ -46,19 +46,29 @@ int main(){
     scanf(" %d", pontos_turisticos);
     limparBuffer();
 
+    //função para mostrar os dados da carta cadastrada
+    printf("\n=== Dados das Cartas ===\n");
+    printf("Estado: %s\n", &estado);
+    printf("Código: %s\n", &codigo);
+    printf("Cidade: %s\n", &nome);
+    printf("População: %d habitantes\n", &populacao);
+    printf("Área: %.2f km²\n", &area);
+    printf("PIB: %.2f bilhões\n", &pib);
+    printf("Pontos turísticos: %d\n", &pontos_turisticos);
+
     //função para cadastrar a segunda carta
     printf("\n=== Cadastre a segunda Carta ===\n");
 
     printf("Digite o nome do estado: ");
-    scanf(" %s[^\n]", &estado); // %[^\n] permite ler strings com espaços
+    scanf(" %s\n", &estado);
     limparBuffer();
 
     printf("Digite o código da carta: ");
-    scanf(" %c", &codigo);
+    scanf(" %s", &codigo);
     limparBuffer();
 
     printf("Digite o nome da cidade: ");
-    scanf(" %s[^\n]", &nome);
+    scanf(" %s\n", &nome);
     limparBuffer();
 
     printf("Digite a população: ");
@@ -77,10 +87,11 @@ int main(){
     scanf(" %d", pontos_turisticos);
     limparBuffer();
 
+    //função para mostrar os dados da carta cadastrada
     printf("\n=== Dados das Cartas ===\n");
     printf("Estado: %s\n", &estado);
     printf("Código: %s\n", &codigo);
-    printf("Cidade: %s[^\n]", &nome);
+    printf("Cidade: %s\n", &nome);
     printf("População: %d habitantes\n", &populacao);
     printf("Área: %.2f km²\n", &area);
     printf("PIB: %.2f bilhões\n", &pib);
