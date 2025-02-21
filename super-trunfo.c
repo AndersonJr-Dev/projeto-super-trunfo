@@ -79,17 +79,14 @@ int main(){
 
     printf("\n=== Dados das Cartas ===\n");
     printf("Estado: %s\n", &estado);
-    printf("Código: %c\n", &codigo);
-    printf("Cidade: %s\n", &nome);
+    printf("Código: %s\n", &codigo);
+    printf("Cidade: %s[^\n]", &nome);
     printf("População: %d habitantes\n", &populacao);
     printf("Área: %.2f km²\n", &area);
     printf("PIB: %.2f bilhões\n", &pib);
     printf("Pontos turísticos: %d\n", &pontos_turisticos);
 
     return 0;
-
-
-
 
 
 }
