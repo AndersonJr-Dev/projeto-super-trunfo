@@ -1,78 +1,95 @@
 #include <stdio.h>
 
-// Estrutura para armazenar os dados de uma carta
-typedef struct {
+int main(){
+    //Estrutura das cartas para armazenar
     char estado[50];
-    int codigo;
+    char codigo;
     char nome[50];
     int populacao;
     float area;
     float pib;
     int pontos_turisticos;
-} Carta;
 
-// Função para limpar o buffer de entrada
-void limparBuffer() {
-    while (getchar() != '\n'); // Limpa o buffer de entrada
-}
+    void limparBuffer() {
+        while (getchar() != '\n'); // Limpa o buffer de entrada
+    }
 
-// Função para cadastrar uma carta
-void cadastrarCarta(Carta *c) {
+    //função para cadastrar cartas
     printf("\n=== Cadastro de Carta ===\n");
+    printf("\n=== Cadastre a primeira Carta ===\n");
 
     printf("Digite o nome do estado: ");
-    scanf(" %[^\n]", c->estado); // Leitura do nome do estado
-    limparBuffer();  // Limpar buffer após ler o estado
+    scanf(" %s[^\n]", &estado); // %[^\n] permite ler strings com espaços
+    limparBuffer(); // limpar o buffer após ler a entrada teclado
 
     printf("Digite o código da carta: ");
-    scanf("%d", &c->codigo); // Leitura do código
-    limparBuffer();  // Limpar buffer após ler o código
+    scanf(" %c", &codigo);
+    limparBuffer();
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", c->nome); // Leitura do nome da cidade
-    limparBuffer();  // Limpar buffer após ler o nome
+    scanf(" %s[^\n]", &nome);
+    limparBuffer();
 
-    printf("Digite a população da cidade: ");
-    scanf("%d", &c->populacao); // Leitura da população
-    limparBuffer();  // Limpar buffer após ler a população
+    printf("Digite a população: ");
+    scanf(" %d", populacao);
+    limparBuffer();
 
-    printf("Digite a área da cidade em km²: ");
-    scanf("%f", &c->area); // Leitura da área
-    limparBuffer();  // Limpar buffer após ler a área
+    printf("Digite a área em km²: ");
+    scanf(" %f", area);
+    limparBuffer();
 
-    printf("Digite o PIB da cidade em bilhões: ");
-    scanf("%f", &c->pib); // Leitura do PIB
-    limparBuffer();  // Limpar buffer após ler o PIB
+    printf("Digite o pib em bilhões: ");
+    scanf(" %f", pib);
+    limparBuffer();
 
-    printf("Digite o número de pontos turísticos: ");
-    scanf("%d", &c->pontos_turisticos); // Leitura do número de pontos turísticos
-    limparBuffer();  // Limpar buffer após ler os pontos turísticos
+    printf("Digite a quantidade de pontos turisticos: ");
+    scanf(" %d", pontos_turisticos);
+    limparBuffer();
 
-    printf("\nCarta cadastrada com sucesso!\n");
-}
+    //função para cadastrar a segunda carta
+    printf("\n=== Cadastre a segunda Carta ===\n");
 
-// Função para exibir os dados de uma carta
-void exibirCarta(const Carta *c) {
-    printf("\n=== Dados da Carta ===\n");
-    printf("Estado: %s", c->estado); // `%s` já inclui o caractere '\n' da leitura anterior
-    printf("Código: %d\n", c->codigo);
-    printf("Cidade: %s", c->nome);
-    printf("População: %d habitantes\n", c->populacao);
-    printf("Área: %.2f km²\n", c->area);
-    printf("PIB: %.2f bilhões\n", c->pib);
-    printf("Pontos turísticos: %d\n", c->pontos_turisticos);
-}
+    printf("Digite o nome do estado: ");
+    scanf(" %s[^\n]", &estado); // %[^\n] permite ler strings com espaços
+    limparBuffer();
 
-int main() {
-    Carta carta1, carta2;
+    printf("Digite o código da carta: ");
+    scanf(" %c", &codigo);
+    limparBuffer();
 
-    // Cadastrando duas cartas
-    cadastrarCarta(&carta1);
-    cadastrarCarta(&carta2);
+    printf("Digite o nome da cidade: ");
+    scanf(" %s[^\n]", &nome);
+    limparBuffer();
 
-    // Exibindo as cartas cadastradas
-    exibirCarta(&carta1);
-    exibirCarta(&carta2);
+    printf("Digite a população: ");
+    scanf(" %d", populacao);
+    limparBuffer();
+
+    printf("Digite a área em km²: ");
+    scanf(" %.2f", area);
+    limparBuffer();
+
+    printf("Digite o pib em bilhões: ");
+    scanf(" %.2f", pib);
+    limparBuffer();
+
+    printf("Digite a quantidade de pontos turisticos: ");
+    scanf(" %d", pontos_turisticos);
+    limparBuffer();
+
+    printf("\n=== Dados das Cartas ===\n");
+    printf("Estado: %s\n", &estado);
+    printf("Código: %c\n", &codigo);
+    printf("Cidade: %s\n", &nome);
+    printf("População: %d habitantes\n", &populacao);
+    printf("Área: %.2f km²\n", &area);
+    printf("PIB: %.2f bilhões\n", &pib);
+    printf("Pontos turísticos: %d\n", &pontos_turisticos);
 
     return 0;
+
+
+
+
+
 }
