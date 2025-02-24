@@ -1,9 +1,9 @@
-# Projeto de Cadastro de Cartas
+# Projeto Super Trunfo - Novato
 
-Este projeto foi desenvolvido como parte da avaliação da disciplina de Programação na faculdade. O objetivo é cadastrar e exibir dados de cartas que representam cidades, contendo informações como estado, código, nome, população, área, PIB e pontos turísticos.
+Este projeto foi desenvolvido como parte de um exercício de programação em C. O objetivo é simular um jogo de cartas no estilo "Super Trunfo", onde o usuário pode cadastrar e visualizar informações sobre cartas que representam cidades.
 
 ## 🚀 Funcionalidades
-- Cadastro de duas cartas (cidades) com os seguintes dados:
+- Cadastro de cartas (cidades) com os seguintes dados:
   - Nome do estado.
   - Código da carta.
   - Nome da cidade.
@@ -15,7 +15,7 @@ Este projeto foi desenvolvido como parte da avaliação da disciplina de Program
 
 ## 🛠️ Tecnologias Utilizadas
 - **Linguagem**: C.
-- **Compilador**: GCC (ou qualquer compilador C compatível).
+- **Compilador**: GCC.
 
 ## 📦 Como Executar o Projeto
 
@@ -25,4 +25,4 @@ Este projeto foi desenvolvido como parte da avaliação da disciplina de Program
 ### Passos para Executar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/AndersonJr-Dev/projeto-super-trunfo-novato.git
