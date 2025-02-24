@@ -16,13 +16,3 @@ Este projeto foi desenvolvido como parte de um exercício de programação em C.
 ## 🛠️ Tecnologias Utilizadas
 - **Linguagem**: C.
 - **Compilador**: GCC.
-
-## 📦 Como Executar o Projeto
-
-### Pré-requisitos
-- Um compilador C instalado (ex: GCC).
-
-### Passos para Executar
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/AndersonJr-Dev/projeto-super-trunfo-novato.git
